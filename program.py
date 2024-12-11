@@ -1,3 +1,4 @@
+from basics.data_structs.singly_linked_list import SinglyLinkedList
 from basics.algorithms.array_sorts import ArraySorts
 from easy.two_sum import TwoSum
 from medium.add_two_numbers import AddTwoNumbers
@@ -16,12 +17,22 @@ def _display_int_array(array):
     print(output_str)
 #endregion
 
-
 # region DATA STRUCTS
 print("\nDATA STRUCTURES:\n")
 
 # Singly Linked List
+print("\nSingly Linked List:")
+single_linked_list = SinglyLinkedList()
+sample_data = [1, 2, 3, 4, 5]
+
+for num in sample_data:
+    single_linked_list.insert(num)
+
+single_linked_list.display()
+
 # Doubly Linked List
+print("\nDoubly Linked List:")
+
 # Circular Linked List
 # Skip List
 # Binary Search Tree

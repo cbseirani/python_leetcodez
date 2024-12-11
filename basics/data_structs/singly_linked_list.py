@@ -1,7 +1,7 @@
 '''
- * A singly linked list is a linear data structure where each
- *  element (node) contains a value and a reference (link) to the
- *  next node in the sequence, forming a chain-like collection.
+A singly linked list is a linear data structure where each
+    element (node) contains a value and a reference (link) to the
+    next node in the sequence, forming a chain-like collection.
 '''
 class Node:
     def __init__(self, data):
@@ -25,7 +25,7 @@ class SinglyLinkedList:
     def display(self):
         current = self._head
         while current is not None:
-            print(current.data, end=" -> ")
+            print(current.data, end = " -> ")
             current = current.next
         print("null")
     

@@ -1,4 +1,5 @@
 from basics.data_structs.singly_linked_list import SinglyLinkedList
+from basics.data_structs.doubly_linked_list import DoublyLinkedList
 from basics.algorithms.array_sorts import ArraySorts
 from easy.two_sum import TwoSum
 from medium.add_two_numbers import AddTwoNumbers
@@ -32,6 +33,14 @@ single_linked_list.display()
 
 # Doubly Linked List
 print("\nDoubly Linked List:")
+double_linked_list = DoublyLinkedList()
+sample_data = [1, 2, 3, 4, 5]
+
+for num in sample_data:
+    double_linked_list.insert(num)
+
+double_linked_list.display_forward_traversal()
+double_linked_list.display_reverse_traversal()
 
 # Circular Linked List
 # Skip List
